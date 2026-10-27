@@ -1,0 +1,14 @@
+TV backup — Tue Oct 27 13:24:46 IST 2026
+Host: 192.168.0.115:5555
+
+  dangalUHD
+  MiTV-AXSO2
+  PI.3735 release-keys
+  9
+  28
+  dangal
+
+Packages: 124 installed, 0 disabled, 19 third-party
+Home resolves to: packageName=com.google.android.tvlauncher
+
+To see what changed later:  diff -u /Users/rakshita/Documents/TV/backups/2026-10-27_132437/packages-disabled.txt <new backup>/packages-disabled.txt

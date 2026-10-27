@@ -1,0 +1,933 @@
+29 activities found:
+  Activity #0:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=com.google.android.finsky.tvmainactivity.TvMainActivity
+      packageName=com.android.vending
+      labelRes=0x7f140656 nonLocalizedLabel=null icon=0x0 banner=0x0
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.android.vending targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x300200 theme=0x7f150246
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.google.android.finsky.application.tvimpl.TubeskyApplication
+        packageName=com.android.vending
+        labelRes=0x7f1400e5 nonLocalizedLabel=null icon=0x7f110001 banner=0x7f080212
+        className=com.google.android.finsky.application.tvimpl.TubeskyApplication
+        processName=com.android.vending
+        taskAffinity=com.android.vending
+        uid=10041 flags=0x30cabec5 privateFlags=0x1118 theme=0x0
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.android.vending-bdmVHAWxGVxOWmyskkg6tg==/base.apk
+        splitSourceDirs=[/data/app/com.android.vending-bdmVHAWxGVxOWmyskkg6tg==/split_config.armeabi_v7a.apk, /data/app/com.android.vending-bdmVHAWxGVxOWmyskkg6tg==/split_config.en.apk]
+        seinfo=default:privapp:targetSdkVersion=37
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.android.vending
+        deviceProtectedDataDir=/data/user_de/0/com.android.vending
+        credentialProtectedDataDir=/data/user/0/com.android.vending
+        sharedLibraryFiles=[/system/framework/org.apache.http.legacy.boot.jar]
+        splitClassLoaderNames=[null, null]
+        enabled=true minSdkVersion=24 targetSdkVersion=37 versionCode=85341708 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        category=7
+        HiddenApiEnforcementPolicy=2
+  Activity #1:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=com.google.android.apps.youtube.tv.activity.ShellActivity
+      packageName=com.google.android.youtube.tv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.google.android.youtube.tv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x13002a0 theme=0x7f150185
+      screenOrientation=6 configChanges=0x6f3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.google.android.apps.youtube.tv.application.TvRoot_Application
+        packageName=com.google.android.youtube.tv
+        labelRes=0x7f140031 nonLocalizedLabel=null icon=0x7f110001 banner=0x7f08007a
+        className=com.google.android.apps.youtube.tv.application.TvRoot_Application
+        processName=com.google.android.youtube.tv
+        taskAffinity=com.google.android.youtube.tv
+        uid=10057 flags=0x2088bec5 privateFlags=0x1110 theme=0x0
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.google.android.youtube.tv-aYT8nd-1W-K9b5PugngP4w==/base.apk
+        splitSourceDirs=[/data/app/com.google.android.youtube.tv-aYT8nd-1W-K9b5PugngP4w==/split_config.armeabi_v7a.apk]
+        seinfo=default:targetSdkVersion=34
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.youtube.tv
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.youtube.tv
+        credentialProtectedDataDir=/data/user/0/com.google.android.youtube.tv
+        splitClassLoaderNames=[null]
+        enabled=true minSdkVersion=24 targetSdkVersion=34 versionCode=530340320 targetSandboxVersion=1
+        supportsRtl=false
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #2:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=com.mitv.tvhome.atv.app.BannerLogoA
+      packageName=com.mitv.tvhome.atv
+      labelRes=0x7f110038 nonLocalizedLabel=null icon=0x0 banner=0x7f080072
+      enabled=false exported=true directBootAware=false
+      taskAffinity=.PatchWall targetActivity=com.mitv.tvhome.atv.app.PatchWallActivity persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x4234 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.mitv.tvhome.atv.app.TvHomeApplicationAtv
+        packageName=com.mitv.tvhome.atv
+        labelRes=0x7f110038 nonLocalizedLabel=null icon=0x7f0e0002 banner=0x0
+        className=com.mitv.tvhome.atv.app.TvHomeApplicationAtv
+        processName=com.mitv.tvhome.atv
+        taskAffinity=com.mitv.tvhome.atv
+        uid=10038 flags=0x38d83ec5 privateFlags=0x1108 theme=0x7f12000e
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.mitv.tvhome.atv-GEo9XuuGwE6wG8IkZwknog==/base.apk
+        seinfo=default:privapp:targetSdkVersion=26
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.mitv.tvhome.atv
+        deviceProtectedDataDir=/data/user_de/0/com.mitv.tvhome.atv
+        credentialProtectedDataDir=/data/user/0/com.mitv.tvhome.atv
+        enabled=true minSdkVersion=23 targetSdkVersion=26 versionCode=147 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=3
+  Activity #3:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=com.xiaomi.mitv.mediaexplorer.NewScraperMainEntryActivity
+      packageName=com.xiaomi.mitv.mediaexplorer
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.xiaomi.mitv.mediaexplorer targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x0
+      screenOrientation=-1 configChanges=0xf3 softInputMode=0x30
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.xiaomi.mitv.mediaexplorer.App
+        packageName=com.xiaomi.mitv.mediaexplorer
+        labelRes=0x7f0e000c nonLocalizedLabel=null icon=0x7f070049 banner=0x7f070049
+        className=com.xiaomi.mitv.mediaexplorer.App
+        processName=com.xiaomi.mitv.mediaexplorer
+        taskAffinity=com.xiaomi.mitv.mediaexplorer
+        uid=10007 flags=0x38d8b845 privateFlags=0x101008 theme=0x7f0f0000
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/TVMediaExplorer/TVMediaExplorer.apk
+        seinfo=platform:privapp:targetSdkVersion=26
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.xiaomi.mitv.mediaexplorer
+        deviceProtectedDataDir=/data/user_de/0/com.xiaomi.mitv.mediaexplorer
+        credentialProtectedDataDir=/data/user/0/com.xiaomi.mitv.mediaexplorer
+        enabled=true minSdkVersion=17 targetSdkVersion=26 versionCode=112 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #4:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=ca.dstudio.atvlauncher.screens.launcher.LauncherActivity
+      packageName=ca.dstudio.atvlauncher.free
+      enabled=true exported=true directBootAware=false
+      taskAffinity=null targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=3 flags=0x6214 theme=0x7f0d000b
+      screenOrientation=0 configChanges=0x73 softInputMode=0x33
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE
+      ApplicationInfo:
+        name=ca.dstudio.atvlauncher.LauncherApplication
+        packageName=ca.dstudio.atvlauncher.free
+        labelRes=0x7f0c0004 nonLocalizedLabel=null icon=0x7f0b0000 banner=0x7f07000b
+        className=ca.dstudio.atvlauncher.LauncherApplication
+        processName=ca.dstudio.atvlauncher.free
+        taskAffinity=ca.dstudio.atvlauncher.free
+        uid=10084 flags=0x30d8be44 privateFlags=0x1000 theme=0x7f0d0003
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/ca.dstudio.atvlauncher.free-UeckdBJPFdS0gmkr46jDCg==/base.apk
+        seinfo=default:targetSdkVersion=28
+        seinfoUser=:complete
+        dataDir=/data/user/0/ca.dstudio.atvlauncher.free
+        deviceProtectedDataDir=/data/user_de/0/ca.dstudio.atvlauncher.free
+        credentialProtectedDataDir=/data/user/0/ca.dstudio.atvlauncher.free
+        enabled=true minSdkVersion=16 targetSdkVersion=28 versionCode=9046176 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #5:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=com.apowersoft.mirror.tv.ui.activity.WelcomeActivity
+      packageName=com.apowersoft.mirror.tv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.apowersoft.mirror.tv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f1201b4
+      screenOrientation=0 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.apowersoft.mirror.tv.GlobalApplication
+        packageName=com.apowersoft.mirror.tv
+        labelRes=0x7f110022 nonLocalizedLabel=null icon=0x7f0e0016 banner=0x7f0e0010
+        className=com.apowersoft.mirror.tv.GlobalApplication
+        processName=com.apowersoft.mirror.tv
+        taskAffinity=com.apowersoft.mirror.tv
+        uid=10092 flags=0x28d8be44 privateFlags=0x1110 theme=0x7f120319
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/base.apk
+        splitSourceDirs=[/data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.armeabi_v7a.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.bn.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.en.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.gu.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.hi.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.kn.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.mr.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.ta.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.te.apk, /data/app/com.apowersoft.mirror.tv-0NwLvtfZFVdm0Wm1YDKbnw==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=34
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.apowersoft.mirror.tv
+        deviceProtectedDataDir=/data/user_de/0/com.apowersoft.mirror.tv
+        credentialProtectedDataDir=/data/user/0/com.apowersoft.mirror.tv
+        splitClassLoaderNames=[null, null, null, null, null, null, null, null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=34 versionCode=233 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        category=7
+        HiddenApiEnforcementPolicy=2
+  Activity #6:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ActivityInfo:
+      name=nextapp.fx.ui.ExplorerActivity
+      packageName=nextapp.fx
+      labelRes=0x7f0c00f7 nonLocalizedLabel=null icon=0x7f0a0000 banner=0x0
+      enabled=true exported=true directBootAware=false
+      taskAffinity=nextapp.fx targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x200 theme=0x0
+      screenOrientation=-1 configChanges=0x4f3 softInputMode=0x2
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE
+      ApplicationInfo:
+        name=nextapp.fx.FX
+        packageName=nextapp.fx
+        labelRes=0x7f0c00f7 nonLocalizedLabel=null icon=0x7f0a0000 banner=0x7f060000
+        className=nextapp.fx.FX
+        processName=nextapp.fx
+        taskAffinity=nextapp.fx
+        uid=10082 flags=0x3888be44 privateFlags=0x400 theme=0x7f0d0003
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/nextapp.fx-4RUXMt97dlm3qf661bxCxg==/base.apk
+        seinfo=default:targetSdkVersion=28
+        seinfoUser=:complete
+        dataDir=/data/user/0/nextapp.fx
+        deviceProtectedDataDir=/data/user_de/0/nextapp.fx
+        credentialProtectedDataDir=/data/user/0/nextapp.fx
+        enabled=true minSdkVersion=16 targetSdkVersion=28 versionCode=8001 targetSandboxVersion=1
+        description=0x7f0c00db
+        supportsRtl=false
+        fullBackupContent=@xml/2131689472
+        category=7
+        HiddenApiEnforcementPolicy=2
+  Activity #7:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=co.sensara.appsense.leanback.LeanbackTVActivity
+      packageName=co.sensara.tv.mitv
+      labelRes=0x0 nonLocalizedLabel=Sensy TV Guide icon=0x0 banner=0x7f08040b
+      enabled=true exported=true directBootAware=false
+      taskAffinity=co.sensara.tv.mitv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=3 flags=0x300204 theme=0x7f12024d
+      screenOrientation=-1 configChanges=0x483 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=co.sensara.tv.mitv.Application
+        packageName=co.sensara.tv.mitv
+        labelRes=0x7f110051 nonLocalizedLabel=null icon=0x7f08036f banner=0x7f08040b
+        className=co.sensara.tv.mitv.Application
+        processName=co.sensara.tv.mitv
+        taskAffinity=co.sensara.tv.mitv
+        uid=10075 flags=0x30d8bec5 privateFlags=0x1100 theme=0x7f120008
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/co.sensara.tv.mitv-VNXpnZEX0ObKgK1W01KBew==/base.apk
+        seinfo=default:targetSdkVersion=25
+        seinfoUser=:complete
+        dataDir=/data/user/0/co.sensara.tv.mitv
+        deviceProtectedDataDir=/data/user_de/0/co.sensara.tv.mitv
+        credentialProtectedDataDir=/data/user/0/co.sensara.tv.mitv
+        enabled=true minSdkVersion=21 targetSdkVersion=30 versionCode=125 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f150004
+        HiddenApiEnforcementPolicy=2
+  Activity #8:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.amazon.ignition.IgnitionActivity
+      packageName=com.amazon.amazonvideo.livingroom
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.amazon.amazonvideo.livingroom targetActivity=com.amazon.ignitionshared.MainActivity persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x1300200 theme=0x0
+      screenOrientation=0 configChanges=0x80b3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.amazon.primevideo.PrimeVideoApplication
+        packageName=com.amazon.amazonvideo.livingroom
+        labelRes=0x7f0e001c nonLocalizedLabel=null icon=0x7f0c0000 banner=0x7f07004f
+        className=com.amazon.primevideo.PrimeVideoApplication
+        processName=com.amazon.amazonvideo.livingroom
+        taskAffinity=com.amazon.amazonvideo.livingroom
+        uid=10059 flags=0x20883ec5 privateFlags=0x1110 theme=0x7f0f0111
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/base.apk
+        splitSourceDirs=[/data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.armeabi_v7a.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.bn.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.en.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.gu.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.hi.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.kn.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.mr.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.ta.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.te.apk, /data/app/com.amazon.amazonvideo.livingroom-SUDqYcc5ai3kAjU5k9olXg==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=35
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.amazon.amazonvideo.livingroom
+        deviceProtectedDataDir=/data/user_de/0/com.amazon.amazonvideo.livingroom
+        credentialProtectedDataDir=/data/user/0/com.amazon.amazonvideo.livingroom
+        splitClassLoaderNames=[null, null, null, null, null, null, null, null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=35 versionCode=606024070 targetSandboxVersion=1
+        supportsRtl=false
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #9:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.android.tv.TvActivity
+      packageName=com.android.tv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.android.tv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.android.tv.app.LiveTvApplication
+        packageName=com.android.tv
+        labelRes=0x7f0f002a nonLocalizedLabel=null icon=0x7f0800fa banner=0x7f0800cf
+        className=com.android.tv.app.LiveTvApplication
+        processName=com.android.tv
+        taskAffinity=com.android.tv
+        uid=1000 flags=0x38c8be45 privateFlags=0x101008 theme=0x7f10017e
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/LiveTv/LiveTv.apk
+        seinfo=platform:privapp:targetSdkVersion=26
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.android.tv
+        deviceProtectedDataDir=/data/user_de/0/com.android.tv
+        credentialProtectedDataDir=/data/user/0/com.android.tv
+        enabled=true minSdkVersion=23 targetSdkVersion=26 versionCode=417001130 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #10:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.google.android.apps.nbu.smartconnect.tv.localplayer.HomeActivity
+      packageName=com.google.android.apps.nbu.smartconnect.tv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.google.android.apps.nbu.smartconnect.tv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f1000d7
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_FORCE_RESIZEABLE
+      maxAspectRatio=1.86
+      ApplicationInfo:
+        name=com.google.android.apps.nbu.smartconnect.tv.SmartConnectTv_Application
+        packageName=com.google.android.apps.nbu.smartconnect.tv
+        labelRes=0x7f0f001d nonLocalizedLabel=null icon=0x0 banner=0x7f0800af
+        className=com.google.android.apps.nbu.smartconnect.tv.SmartConnectTv_Application
+        processName=com.google.android.apps.nbu.smartconnect.tv
+        taskAffinity=com.google.android.apps.nbu.smartconnect.tv
+        uid=10030 flags=0x30c83e45 privateFlags=0x100008 theme=0x7f1000d7
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/SmartConnect/SmartConnect.apk
+        seinfo=platform:privapp:targetSdkVersion=21
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.apps.nbu.smartconnect.tv
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.apps.nbu.smartconnect.tv
+        credentialProtectedDataDir=/data/user/0/com.google.android.apps.nbu.smartconnect.tv
+        enabled=true minSdkVersion=21 targetSdkVersion=21 versionCode=965 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #11:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.google.android.apps.nbu.smartconnect.tv.wifipassword.WifiPasswordActivity
+      packageName=com.google.android.apps.nbu.smartconnect.tv
+      labelRes=0x7f0f0098 nonLocalizedLabel=null icon=0x0 banner=0x0
+      enabled=true exported=false directBootAware=false
+      taskAffinity=com.google.android.apps.nbu.smartconnect.tv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f1000d7
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x10
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_FORCE_RESIZEABLE
+      maxAspectRatio=1.86
+      ApplicationInfo:
+        name=com.google.android.apps.nbu.smartconnect.tv.SmartConnectTv_Application
+        packageName=com.google.android.apps.nbu.smartconnect.tv
+        labelRes=0x7f0f001d nonLocalizedLabel=null icon=0x0 banner=0x7f0800af
+        className=com.google.android.apps.nbu.smartconnect.tv.SmartConnectTv_Application
+        processName=com.google.android.apps.nbu.smartconnect.tv
+        taskAffinity=com.google.android.apps.nbu.smartconnect.tv
+        uid=10030 flags=0x30c83e45 privateFlags=0x100008 theme=0x7f1000d7
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/SmartConnect/SmartConnect.apk
+        seinfo=platform:privapp:targetSdkVersion=21
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.apps.nbu.smartconnect.tv
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.apps.nbu.smartconnect.tv
+        credentialProtectedDataDir=/data/user/0/com.google.android.apps.nbu.smartconnect.tv
+        enabled=true minSdkVersion=21 targetSdkVersion=21 versionCode=965 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #12:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.google.android.music.tv.HomeActivity
+      packageName=com.google.android.music
+      labelRes=0x7f130063 nonLocalizedLabel=null icon=0x0 banner=0x0
+      processName=com.google.android.music:main
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.google.android.music.task targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x300240 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.google.android.music.MusicApplication
+        packageName=com.google.android.music
+        labelRes=0x7f130063 nonLocalizedLabel=null icon=0x7f030001 banner=0x7f0202bb
+        className=com.google.android.music.MusicApplication
+        processName=com.google.android.music:main
+        taskAffinity=com.google.android.music.task
+        uid=10055 flags=0x38cbbe65 privateFlags=0x1000 theme=0x7f140010
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/app/Music2Pano/Music2Pano.apk
+        seinfo=default:targetSdkVersion=28
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.music
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.music
+        credentialProtectedDataDir=/data/user/0/com.google.android.music
+        sharedLibraryFiles=[/system/framework/org.apache.http.legacy.boot.jar]
+        enabled=true minSdkVersion=21 targetSdkVersion=28 versionCode=72103 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #13:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.google.android.apps.play.games.app.atv.features.home.HomeActivity
+      packageName=com.google.android.play.games
+      labelRes=0x7f1403f8 nonLocalizedLabel=null icon=0x7f110006 banner=0x7f0800b7
+      enabled=true exported=true directBootAware=false
+      taskAffinity=null targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f1501f8
+      screenOrientation=-1 configChanges=0x63 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.google.android.apps.play.games.app.atv.core.PlayGamesApplication
+        packageName=com.google.android.play.games
+        labelRes=0x7f1403f9 nonLocalizedLabel=null icon=0x7f110006 banner=0x0
+        className=com.google.android.apps.play.games.app.atv.core.PlayGamesApplication
+        processName=com.google.android.play.games
+        taskAffinity=null
+        uid=10073 flags=0x3088bec5 privateFlags=0x1100 theme=0x0
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.google.android.play.games-HO9A0Im86-gPvfnnFosAJw==/base.apk
+        splitSourceDirs=[/data/app/com.google.android.play.games-HO9A0Im86-gPvfnnFosAJw==/split_config.en.apk, /data/app/com.google.android.play.games-HO9A0Im86-gPvfnnFosAJw==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=36
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.play.games
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.play.games
+        credentialProtectedDataDir=/data/user/0/com.google.android.play.games
+        splitClassLoaderNames=[null, null]
+        enabled=true minSdkVersion=23 targetSdkVersion=36 versionCode=663901470 targetSandboxVersion=1
+        supportsRtl=false
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #14:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.google.android.videos.tv.presenter.activity.TvLauncherActivity
+      packageName=com.google.android.videos
+      labelRes=0x7f140073 nonLocalizedLabel=null icon=0x0 banner=0x0
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.google.android.videos targetActivity=com.google.android.apps.play.movies.tv.presenter.activity.TvLauncherActivity persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f150736
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.google.android.apps.play.movies.tv.TvVideosApplication
+        packageName=com.google.android.videos
+        labelRes=0x7f140319 nonLocalizedLabel=null icon=0x7f110003 banner=0x7f110006
+        className=com.google.android.apps.play.movies.tv.TvVideosApplication
+        processName=com.google.android.videos
+        taskAffinity=com.google.android.videos
+        uid=10050 flags=0x20dbbcc5 privateFlags=0x1110 theme=0x7f150026
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.google.android.videos-7lLTA4Gg4_PM3jOxjSN6dg==/base.apk
+        splitSourceDirs=[/data/app/com.google.android.videos-7lLTA4Gg4_PM3jOxjSN6dg==/split_config.armeabi_v7a.apk, /data/app/com.google.android.videos-7lLTA4Gg4_PM3jOxjSN6dg==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=33
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.google.android.videos
+        deviceProtectedDataDir=/data/user_de/0/com.google.android.videos
+        credentialProtectedDataDir=/data/user/0/com.google.android.videos
+        sharedLibraryFiles=[/system/framework/org.apache.http.legacy.boot.jar]
+        splitClassLoaderNames=[null, null]
+        enabled=true minSdkVersion=23 targetSdkVersion=33 versionCode=44015257 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        category=2
+        HiddenApiEnforcementPolicy=2
+  Activity #15:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.mitv.gallery.activity.HomePageActivity
+      packageName=com.mitv.gallery
+      labelRes=0x0 nonLocalizedLabel=null icon=0x7f020097 banner=0x7f020098
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.mitv.gallery targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x20
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.miui.gallery.GalleryApp
+        packageName=com.mitv.gallery
+        labelRes=0x7f090048 nonLocalizedLabel=null icon=0x7f020097 banner=0x7f020098
+        className=com.miui.gallery.GalleryApp
+        processName=com.mitv.gallery
+        taskAffinity=com.mitv.gallery
+        uid=10010 flags=0x38d8be45 privateFlags=0x101008 theme=0x7f0b00b7
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/MiTVGallery/MiTVGallery.apk
+        seinfo=platform:privapp:targetSdkVersion=26
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.mitv.gallery
+        deviceProtectedDataDir=/data/user_de/0/com.mitv.gallery
+        credentialProtectedDataDir=/data/user/0/com.mitv.gallery
+        enabled=true minSdkVersion=18 targetSdkVersion=26 versionCode=121 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #16:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.netflix.ninja.MainActivity
+      packageName=com.netflix.ninja
+      labelRes=0x7f0f001d nonLocalizedLabel=null icon=0x0 banner=0x7f0d0000
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.netflix.ninja targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x300200 theme=0x7f100140
+      screenOrientation=-1 configChanges=0x4000227f softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_UNRESIZEABLE
+      ApplicationInfo:
+        name=com.netflix.ninja.NetflixApplication
+        packageName=com.netflix.ninja
+        labelRes=0x7f0f001d nonLocalizedLabel=null icon=0x7f0d0001 banner=0x7f0d0000
+        className=com.netflix.ninja.NetflixApplication
+        processName=com.netflix.ninja
+        taskAffinity=com.netflix.ninja
+        uid=10061 flags=0x30883ec5 privateFlags=0x1110 theme=0x7f100140
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.netflix.ninja-8nNSIwx2GFcGNIt_zywcPQ==/base.apk
+        seinfo=default:targetSdkVersion=31
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.netflix.ninja
+        deviceProtectedDataDir=/data/user_de/0/com.netflix.ninja
+        credentialProtectedDataDir=/data/user/0/com.netflix.ninja
+        enabled=true minSdkVersion=22 targetSdkVersion=31 versionCode=12041 targetSandboxVersion=1
+        supportsRtl=false
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f130001
+        HiddenApiEnforcementPolicy=2
+  Activity #17:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.xiaomi.mitv.tvmanager.MainTvManagerActivity
+      packageName=com.xiaomi.mitv.tvmanager
+      labelRes=0x7f0c0007 nonLocalizedLabel=null icon=0x7f07001f banner=0x7f070020
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.xiaomi.mitv.tvmanager targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x200 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.xiaomi.mitv.tvmanager.ManagerApplication
+        packageName=com.xiaomi.mitv.tvmanager
+        labelRes=0x7f0c0007 nonLocalizedLabel=null icon=0x7f07001f banner=0x7f070020
+        className=com.xiaomi.mitv.tvmanager.ManagerApplication
+        processName=com.xiaomi.mitv.tvmanager
+        taskAffinity=com.xiaomi.mitv.tvmanager
+        uid=1000 flags=0x38c8b845 privateFlags=0x101008 theme=0x7f0d0000
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/system/priv-app/TVManager/TVManager.apk
+        seinfo=platform:privapp:targetSdkVersion=26
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.xiaomi.mitv.tvmanager
+        deviceProtectedDataDir=/data/user_de/0/com.xiaomi.mitv.tvmanager
+        credentialProtectedDataDir=/data/user/0/com.xiaomi.mitv.tvmanager
+        enabled=true minSdkVersion=18 targetSdkVersion=26 versionCode=69 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=0
+  Activity #18:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=cm.aptoidetv.pt.activity.MainActivity
+      packageName=cm.aptoidetv.pt
+      enabled=true exported=true directBootAware=false
+      taskAffinity=cm.aptoidetv.pt targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x300200 theme=0x0
+      screenOrientation=0 configChanges=0x4a3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=cm.aptoidetv.pt.MainApplication
+        packageName=cm.aptoidetv.pt
+        labelRes=0x7f0d0165 nonLocalizedLabel=null icon=0x7f0700d3 banner=0x7f07005b
+        className=cm.aptoidetv.pt.MainApplication
+        processName=cm.aptoidetv.pt
+        taskAffinity=cm.aptoidetv.pt
+        uid=10083 flags=0x38d8be44 privateFlags=0x1010 theme=0x0
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/cm.aptoidetv.pt-uRK1WO1jH_62qcXmnZC1Dw==/base.apk
+        seinfo=default:targetSdkVersion=27
+        seinfoUser=:complete
+        dataDir=/data/user/0/cm.aptoidetv.pt
+        deviceProtectedDataDir=/data/user_de/0/cm.aptoidetv.pt
+        credentialProtectedDataDir=/data/user/0/cm.aptoidetv.pt
+        enabled=true minSdkVersion=17 targetSdkVersion=27 versionCode=531 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f110001
+        HiddenApiEnforcementPolicy=3
+  Activity #19:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=crc645bc3e740440b3816.MainActivityTv
+      packageName=com.digitalseva.iptvplayer
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.digitalseva.iptvplayer targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f1501b8
+      screenOrientation=6 configChanges=0xc83 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=androidx.multidex.MultiDexApplication
+        packageName=com.digitalseva.iptvplayer
+        labelRes=0x0 nonLocalizedLabel=IPTV Stream Player icon=0x7f110001 banner=0x7f110000
+        className=androidx.multidex.MultiDexApplication
+        processName=com.digitalseva.iptvplayer
+        taskAffinity=com.digitalseva.iptvplayer
+        uid=10093 flags=0x28d8be44 privateFlags=0x1100 theme=0x7f15000d
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.digitalseva.iptvplayer-JKUm3j540h1oSaPWVxLvHA==/base.apk
+        splitSourceDirs=[/data/app/com.digitalseva.iptvplayer-JKUm3j540h1oSaPWVxLvHA==/split_config.armeabi_v7a.apk, /data/app/com.digitalseva.iptvplayer-JKUm3j540h1oSaPWVxLvHA==/split_config.en.apk, /data/app/com.digitalseva.iptvplayer-JKUm3j540h1oSaPWVxLvHA==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=35
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.digitalseva.iptvplayer
+        deviceProtectedDataDir=/data/user_de/0/com.digitalseva.iptvplayer
+        credentialProtectedDataDir=/data/user/0/com.digitalseva.iptvplayer
+        splitClassLoaderNames=[null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=35 versionCode=35 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #20:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.ionitech.airscreen.ui.activity.welcome.StreamAssistantIndexActivity
+      packageName=com.ionitech.airscreen
+      labelRes=0x7f130032 nonLocalizedLabel=null icon=0x0 banner=0x7f100001
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.ionitech.airscreen targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x0
+      screenOrientation=6 configChanges=0x423 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_UNRESIZEABLE
+      maxAspectRatio=2.4
+      ApplicationInfo:
+        name=com.ionitech.airscreen.MainApplication
+        packageName=com.ionitech.airscreen
+        labelRes=0x7f130032 nonLocalizedLabel=null icon=0x7f100002 banner=0x7f100001
+        className=com.ionitech.airscreen.MainApplication
+        processName=com.ionitech.airscreen
+        taskAffinity=com.ionitech.airscreen
+        uid=10090 flags=0x28d8be44 privateFlags=0x900 theme=0x7f140291
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.ionitech.airscreen-7eavtxX1xb3_lKRp9bVJhQ==/base.apk
+        splitSourceDirs=[/data/app/com.ionitech.airscreen-7eavtxX1xb3_lKRp9bVJhQ==/split_config.armeabi_v7a.apk, /data/app/com.ionitech.airscreen-7eavtxX1xb3_lKRp9bVJhQ==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=35
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.ionitech.airscreen
+        deviceProtectedDataDir=/data/user_de/0/com.ionitech.airscreen
+        credentialProtectedDataDir=/data/user/0/com.ionitech.airscreen
+        splitClassLoaderNames=[null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=35 versionCode=565 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #21:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.v18.voot.ui.JVHomeActivity
+      packageName=com.jio.media.stb.ondemand
+      labelRes=0x0 nonLocalizedLabel=null icon=0x7f100000 banner=0x0
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.jio.media.stb.ondemand targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=1 flags=0x300200 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.v18.voot.JVApplication
+        packageName=com.jio.media.stb.ondemand
+        labelRes=0x7f130039 nonLocalizedLabel=null icon=0x7f100000 banner=0x7f080241
+        className=com.v18.voot.JVApplication
+        processName=com.jio.media.stb.ondemand
+        taskAffinity=com.jio.media.stb.ondemand
+        uid=10078 flags=0x38d83e44 privateFlags=0x1100 theme=0x7f140301
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.jio.media.stb.ondemand-a13S7Mz7dkTpRbCrg5DRhg==/base.apk
+        splitSourceDirs=[/data/app/com.jio.media.stb.ondemand-a13S7Mz7dkTpRbCrg5DRhg==/split_config.en.apk, /data/app/com.jio.media.stb.ondemand-a13S7Mz7dkTpRbCrg5DRhg==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=34
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.jio.media.stb.ondemand
+        deviceProtectedDataDir=/data/user_de/0/com.jio.media.stb.ondemand
+        credentialProtectedDataDir=/data/user/0/com.jio.media.stb.ondemand
+        splitClassLoaderNames=[null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=34 versionCode=2503270 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f170004
+        HiddenApiEnforcementPolicy=2
+  Activity #22:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.mitv.tvhome.mitvplus.app.BannerLogoFree24
+      packageName=com.mitv.tvhome.mitvplus
+      labelRes=0x0 nonLocalizedLabel=null icon=0x0 banner=0x7f0801a5
+      enabled=false exported=true directBootAware=false
+      taskAffinity=com.mitv.tvhome.mitvplus targetActivity=com.mitv.tvhome.mitvplus.app.SplashActivity persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x200 theme=0x1030009
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.mitv.tvhome.mitvplus.app.MiTVPlusApplication
+        packageName=com.mitv.tvhome.mitvplus
+        labelRes=0x7f120032 nonLocalizedLabel=null icon=0x7f0f0009 banner=0x7f08005c
+        className=com.mitv.tvhome.mitvplus.app.MiTVPlusApplication
+        processName=com.mitv.tvhome.mitvplus
+        taskAffinity=com.mitv.tvhome.mitvplus
+        uid=10089 flags=0x20c83844 privateFlags=0x1100 theme=0x7f130259
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.mitv.tvhome.mitvplus-sNZi3W0kgWkl3BrBuUNwUA==/base.apk
+        seinfo=default:targetSdkVersion=34
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.mitv.tvhome.mitvplus
+        deviceProtectedDataDir=/data/user_de/0/com.mitv.tvhome.mitvplus
+        credentialProtectedDataDir=/data/user/0/com.mitv.tvhome.mitvplus
+        enabled=true minSdkVersion=23 targetSdkVersion=34 versionCode=65 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #23:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.mxtech.videoplayer.tv.home.HomeActivity
+      packageName=com.mxtech.videoplayer.television
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.mxtech.videoplayer.television targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=1 flags=0x200 theme=0x7f1402d4
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.mxtech.videoplayer.tv.TVApp
+        packageName=com.mxtech.videoplayer.television
+        labelRes=0x7f130075 nonLocalizedLabel=null icon=0x7f100001 banner=0x7f0800a2
+        className=com.mxtech.videoplayer.tv.TVApp
+        processName=com.mxtech.videoplayer.television
+        taskAffinity=com.mxtech.videoplayer.television
+        uid=10094 flags=0x20d8be44 privateFlags=0x1110 theme=0x0
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.mxtech.videoplayer.television-nwabJJWjHcRzcjOre4ZpEw==/base.apk
+        splitSourceDirs=[/data/app/com.mxtech.videoplayer.television-nwabJJWjHcRzcjOre4ZpEw==/split_config.armeabi_v7a.apk, /data/app/com.mxtech.videoplayer.television-nwabJJWjHcRzcjOre4ZpEw==/split_config.en.apk, /data/app/com.mxtech.videoplayer.television-nwabJJWjHcRzcjOre4ZpEw==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=35
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.mxtech.videoplayer.television
+        deviceProtectedDataDir=/data/user_de/0/com.mxtech.videoplayer.television
+        credentialProtectedDataDir=/data/user/0/com.mxtech.videoplayer.television
+        splitClassLoaderNames=[null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=35 versionCode=188 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=@xml/2132213760
+        HiddenApiEnforcementPolicy=2
+  Activity #24:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.sonyliv.ui.splash.SplashActivity
+      packageName=com.sonyliv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.sonyliv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=1 flags=0x300280 theme=0x7f140178
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_UNRESIZEABLE
+      ApplicationInfo:
+        name=com.sonyliv.SonyLiveApp
+        packageName=com.sonyliv
+        labelRes=0x7f1300d6 nonLocalizedLabel=null icon=0x7f0802cb banner=0x7f0802f8
+        className=com.sonyliv.SonyLiveApp
+        processName=com.sonyliv
+        taskAffinity=com.sonyliv
+        uid=10091 flags=0x28d8be44 privateFlags=0x910 theme=0x7f14000b
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.sonyliv-PpC1n_NO-jhy1Zq9agbo1g==/base.apk
+        splitSourceDirs=[/data/app/com.sonyliv-PpC1n_NO-jhy1Zq9agbo1g==/split_config.armeabi_v7a.apk, /data/app/com.sonyliv-PpC1n_NO-jhy1Zq9agbo1g==/split_config.en.apk, /data/app/com.sonyliv-PpC1n_NO-jhy1Zq9agbo1g==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=33
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.sonyliv
+        deviceProtectedDataDir=/data/user_de/0/com.sonyliv
+        credentialProtectedDataDir=/data/user/0/com.sonyliv
+        splitClassLoaderNames=[null, null, null]
+        enabled=true minSdkVersion=22 targetSdkVersion=33 versionCode=10632 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        HiddenApiEnforcementPolicy=2
+  Activity #25:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.yablio.sendfilestotv.ui.MainActivity
+      packageName=com.yablio.sendfilestotv
+      enabled=true exported=true directBootAware=false
+      taskAffinity=com.yablio.sendfilestotv targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f130479
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.yablio.sendfilestotv.myApplication
+        packageName=com.yablio.sendfilestotv
+        labelRes=0x7f12005c nonLocalizedLabel=null icon=0x7f0f0003 banner=0x7f07008a
+        className=com.yablio.sendfilestotv.myApplication
+        processName=com.yablio.sendfilestotv
+        taskAffinity=com.yablio.sendfilestotv
+        uid=10081 flags=0x30c8be44 privateFlags=0x1100 theme=0x7f130477
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/base.apk
+        splitSourceDirs=[/data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.bn.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.en.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.gu.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.kn.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.mr.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.ta.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.te.apk, /data/app/com.yablio.sendfilestotv-Njjhf2oWYdMYlBSJgYH7HQ==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=34
+        seinfoUser=:complete
+        dataDir=/data/user/0/com.yablio.sendfilestotv
+        deviceProtectedDataDir=/data/user_de/0/com.yablio.sendfilestotv
+        credentialProtectedDataDir=/data/user/0/com.yablio.sendfilestotv
+        splitClassLoaderNames=[null, null, null, null, null, null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=34 versionCode=53 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f150003
+        category=7
+        HiddenApiEnforcementPolicy=2
+  Activity #26:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=de.twokit.castbrowsernexusplayer.MainActivity
+      packageName=de.twokit.castbrowsernexusplayer
+      labelRes=0x7f0f002a nonLocalizedLabel=null icon=0x0 banner=0x0
+      enabled=true exported=true directBootAware=false
+      taskAffinity=de.twokit.castbrowsernexusplayer targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=2 flags=0x300200 theme=0x0
+      screenOrientation=-1 configChanges=0x4b3 softInputMode=0x2
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=de.twokit.castbrowsernexusplayer.CastBrowserApplication
+        packageName=de.twokit.castbrowsernexusplayer
+        labelRes=0x7f0f002a nonLocalizedLabel=null icon=0x7f0e0002 banner=0x7f080195
+        className=de.twokit.castbrowsernexusplayer.CastBrowserApplication
+        processName=de.twokit.castbrowsernexusplayer
+        taskAffinity=de.twokit.castbrowsernexusplayer
+        uid=10080 flags=0x38d8be44 privateFlags=0x1010 theme=0x7f100124
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/de.twokit.castbrowsernexusplayer-VR59ey5Jc02PzuDdkVyfYw==/base.apk
+        seinfo=default:targetSdkVersion=27
+        seinfoUser=:complete
+        dataDir=/data/user/0/de.twokit.castbrowsernexusplayer
+        deviceProtectedDataDir=/data/user_de/0/de.twokit.castbrowsernexusplayer
+        credentialProtectedDataDir=/data/user/0/de.twokit.castbrowsernexusplayer
+        enabled=true minSdkVersion=16 targetSdkVersion=27 versionCode=33 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f120000
+        HiddenApiEnforcementPolicy=3
+  Activity #27:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=com.hotstar.MainActivity
+      packageName=in.startv.hotstar
+      enabled=true exported=true directBootAware=false
+      taskAffinity=in.startv.hotstar targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=3 flags=0x300200 theme=0x0
+      screenOrientation=-1 configChanges=0x3 softInputMode=0x2
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=com.hotstar.App
+        packageName=in.startv.hotstar
+        labelRes=0x7f1300f0 nonLocalizedLabel=null icon=0x7f0f0000 banner=0x7f08029f
+        className=com.hotstar.App
+        processName=in.startv.hotstar
+        taskAffinity=in.startv.hotstar
+        uid=10077 flags=0x20d83e44 privateFlags=0x1110 theme=0x7f140294
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/in.startv.hotstar-u3zr5-TKtIQrthVakxAFgw==/base.apk
+        splitSourceDirs=[/data/app/in.startv.hotstar-u3zr5-TKtIQrthVakxAFgw==/split_config.armeabi_v7a.apk, /data/app/in.startv.hotstar-u3zr5-TKtIQrthVakxAFgw==/split_config.en.apk, /data/app/in.startv.hotstar-u3zr5-TKtIQrthVakxAFgw==/split_config.xhdpi.apk]
+        seinfo=default:targetSdkVersion=36
+        seinfoUser=:complete
+        dataDir=/data/user/0/in.startv.hotstar
+        deviceProtectedDataDir=/data/user_de/0/in.startv.hotstar
+        credentialProtectedDataDir=/data/user/0/in.startv.hotstar
+        splitClassLoaderNames=[null, null, null]
+        enabled=true minSdkVersion=21 targetSdkVersion=36 versionCode=4715 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f170002
+        HiddenApiEnforcementPolicy=2
+  Activity #28:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ActivityInfo:
+      name=live.tech.storm.Splash
+      packageName=live.tech.storm
+      enabled=true exported=true directBootAware=false
+      taskAffinity=live.tech.storm targetActivity=null persistableMode=PERSIST_ROOT_ONLY
+      launchMode=0 flags=0x200 theme=0x7f12000c
+      screenOrientation=-1 configChanges=0x483 softInputMode=0x0
+      lockTaskLaunchMode=LOCK_TASK_LAUNCH_MODE_DEFAULT
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      ApplicationInfo:
+        name=live.tech.storm.MyWrapperProxyApplication
+        packageName=live.tech.storm
+        labelRes=0x7f11001c nonLocalizedLabel=null icon=0x7f0e0000 banner=0x7f080178
+        className=live.tech.storm.MyWrapperProxyApplication
+        processName=live.tech.storm
+        taskAffinity=live.tech.storm
+        uid=10088 flags=0x38c8be44 privateFlags=0x1100 theme=0x7f12000b
+        requiresSmallestWidthDp=0 compatibleWidthLimitDp=0 largestWidthLimitDp=0
+        sourceDir=/data/app/live.tech.storm-ec0uC31lO4YZFRvCkOfipQ==/base.apk
+        seinfo=default:targetSdkVersion=28
+        seinfoUser=:complete
+        dataDir=/data/user/0/live.tech.storm
+        deviceProtectedDataDir=/data/user_de/0/live.tech.storm
+        credentialProtectedDataDir=/data/user/0/live.tech.storm
+        enabled=true minSdkVersion=19 targetSdkVersion=28 versionCode=62 targetSandboxVersion=1
+        supportsRtl=true
+        fullBackupContent=true
+        networkSecurityConfigRes=0x7f140000
+        HiddenApiEnforcementPolicy=2

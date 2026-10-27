@@ -1,0 +1,11 @@
+Filesystem          Size  Used Avail Use% Mounted on
+/dev/root           1.7G  1.3G  384M  79% /
+tmpfs               0.9G  472K  0.9G   1% /dev
+tmpfs               0.9G     0  0.9G   0% /mnt
+/dev/block/odm       31M  472K   30M   2% /odm
+/dev/block/product   30M   14M   16M  46% /product
+/dev/block/dm-1     173M  149M   21M  88% /vendor
+/dev/block/data     4.4G  3.7G  679M  85% /data
+/dev/block/cache    232M  176K  224M   1% /cache
+/dev/block/metadata  11M   40K   11M   1% /metadata
+/data/media         4.4G  3.7G  679M  85% /storage/emulated

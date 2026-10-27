@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TV Remote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b; --panel:#141417; --panel-2:#1c1c21; --line:#2a2a31;
+    --fg:#f2f2f5; --muted:#8b8b96; --accent:#e5484d; --ok:#3dd68c;
+    --r:16px; --shadow:0 18px 40px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-weight:300; display:flex; align-items:center; justify-content:center;
+    padding:14px 16px 28px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%; max-width:360px; display:flex; flex-direction:column; gap:14px}
+
+  header{display:flex; align-items:center; justify-content:space-between; padding:0 4px}
+  .title{font-size:19px; font-weight:500; letter-spacing:-.01em}
+  .status{display:flex; align-items:center; gap:7px; font-size:12px; color:var(--muted)}
+  .dot{width:7px; height:7px; border-radius:50%; background:#555; transition:background .3s}
+  .dot.live{background:var(--ok); box-shadow:0 0 8px var(--ok)}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r);
+        padding:16px; box-shadow:var(--shadow)}
+
+  /* ---- d-pad ---- */
+  .pad{position:relative; width:220px; height:220px; margin:4px auto 2px}
+  .ring{position:absolute; inset:0; border-radius:50%;
+        background:radial-gradient(circle at 50% 35%,#24242b,#141418 70%);
+        border:1px solid var(--line)}
+  .arrow{position:absolute; width:62px; height:62px; border:0; background:transparent;
+         color:var(--fg); cursor:pointer; display:grid; place-items:center;
+         border-radius:14px; transition:background .12s, transform .08s}
+  .arrow:hover{background:rgba(255,255,255,.07)}
+  .arrow:active,.arrow.hit{background:rgba(255,255,255,.16); transform:scale(.93)}
+  .arrow svg{width:18px;height:18px;opacity:.85}
+  .up{top:6px; left:79px} .down{bottom:6px; left:79px}
+  .left{left:6px; top:79px} .right{right:6px; top:79px}
+  .ok{position:absolute; left:63px; top:63px; width:94px; height:94px; border-radius:50%;
+      border:1px solid var(--line); background:linear-gradient(180deg,#2c2c34,#1a1a20);
+      color:var(--fg); font-family:inherit; font-size:14px; font-weight:500; letter-spacing:.08em;
+      cursor:pointer; transition:transform .08s, background .12s}
+  .ok:hover{background:linear-gradient(180deg,#34343d,#202027)}
+  .ok:active,.ok.hit{transform:scale(.94); background:#3a3a45}
+
+  /* ---- button rows ---- */
+  .row{display:grid; gap:8px; margin-top:12px}
+  .r3{grid-template-columns:repeat(3,1fr)} .r4{grid-template-columns:repeat(4,1fr)}
+  .r5{grid-template-columns:repeat(5,1fr)}
+  .r5 .b{padding:11px 2px; font-size:12px}
+  button.b{
+    appearance:none; border:1px solid var(--line); background:var(--panel-2); color:var(--fg);
+    font-family:inherit; font-size:12.5px; font-weight:400; padding:11px 6px; border-radius:11px;
+    cursor:pointer; transition:background .12s, transform .08s, border-color .12s;
+    display:flex; align-items:center; justify-content:center; gap:6px; white-space:nowrap;
+  }
+  button.b:hover{background:#26262d; border-color:#38383f}
+  button.b:active, button.b.hit{transform:scale(.95); background:#32323a}
+  button.b.warm{color:var(--accent)}
+  button.b svg{width:15px;height:15px;opacity:.9}
+
+  /* ---- keyboard ---- */
+  .kb{display:flex; gap:8px; margin-top:12px}
+  .kb input{
+    flex:1; min-width:0; background:var(--panel-2); border:1px solid var(--line);
+    border-radius:11px; padding:11px 13px; color:var(--fg); font-family:inherit;
+    font-size:13px; font-weight:300; outline:none; transition:border-color .15s
+  }
+  .kb input:focus{border-color:#4a4a55}
+  .kb input::placeholder{color:#5c5c66}
+
+  /* ---- apps ---- */
+  .apps{display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:4px}
+  .apps button{font-size:12px; padding:13px 4px; overflow:hidden; text-overflow:ellipsis}
+  .section{font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+           color:var(--muted); margin:0 0 10px 4px; font-weight:400}
+  .hint{font-size:11.5px; color:var(--muted); text-align:center; line-height:1.7; padding:0 8px}
+  kbd{background:var(--panel-2); border:1px solid var(--line); border-radius:5px;
+      padding:1px 5px; font-family:inherit; font-size:10.5px; color:#b4b4bd}
+  .empty{color:var(--muted); font-size:12.5px; padding:6px 4px}
+
+  /* ---- tabs ---- */
+  .tabs{display:grid; grid-template-columns:1fr 1fr; gap:6px;
+        background:rgba(20,20,23,.94); -webkit-backdrop-filter:blur(10px);
+        backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:13px;
+        padding:5px; position:sticky; top:10px; z-index:30;
+        box-shadow:0 8px 22px rgba(0,0,0,.5)}
+  .tabs button{appearance:none; border:0; background:transparent; color:var(--muted);
+        font-family:inherit; font-size:13px; font-weight:400; padding:9px 6px;
+        border-radius:9px; cursor:pointer; transition:background .15s, color .15s}
+  .tabs button.on{background:var(--panel-2); color:var(--fg)}
+  .pane{display:none} .pane.on{display:block}
+
+  /* ---- touchpad ---- */
+  .padwrap{position:relative; width:100%; aspect-ratio:16/9; border-radius:12px;
+           overflow:hidden; background:#000; border:1px solid var(--line);
+           cursor:crosshair; touch-action:none; user-select:none}
+  .padwrap img{width:100%; height:100%; object-fit:contain; display:block;
+               pointer-events:none; -webkit-user-drag:none}
+  .padwrap .noimg{position:absolute; inset:0; display:grid; place-items:center;
+                  color:var(--muted); font-size:12.5px; text-align:center; padding:0 20px}
+  .ping{position:absolute; width:26px; height:26px; margin:-13px 0 0 -13px; border-radius:50%;
+        border:2px solid #fff; opacity:0; pointer-events:none}
+  .ping.go{animation:ping .5s ease-out}
+  @keyframes ping{0%{opacity:.9;transform:scale(.35)}100%{opacity:0;transform:scale(1.5)}}
+  .blocked{position:absolute; inset:0; display:none; place-items:center; text-align:center;
+           background:rgba(8,8,10,.9); padding:0 26px; line-height:1.7; font-size:12.5px;
+           color:#d6d6de}
+  .blocked.on{display:grid}
+  .blocked b{color:var(--fg)}
+  .live{position:absolute; top:8px; right:9px; font-size:10px; letter-spacing:.1em;
+        text-transform:uppercase; color:#cfcfd6; background:rgba(0,0,0,.55);
+        border:1px solid rgba(255,255,255,.14); padding:3px 7px; border-radius:20px}
+  .padbar{display:flex; align-items:center; gap:8px; margin-top:9px}
+  .padbar .b{flex:1}
+  .note{font-size:11.5px; color:var(--muted); line-height:1.65; margin:10px 2px 0}
+
+  /* ---- bigger keyboard box ---- */
+  .kbbig textarea{width:100%; min-height:70px; resize:vertical; background:var(--panel-2);
+        border:1px solid var(--line); border-radius:11px; padding:11px 13px; color:var(--fg);
+        font-family:inherit; font-size:13.5px; font-weight:300; outline:none; line-height:1.5}
+  .kbbig textarea:focus{border-color:#4a4a55}
+  .kbbig textarea::placeholder{color:#5c5c66}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="title">TV Remote</div>
+    <div class="status"><span class="dot" id="dot"></span><span id="app">connecting…</span></div>
+  </header>
+
+  <div class="tabs">
+    <button id="tab-remote" class="on">Remote</button>
+    <button id="tab-pad">Touchpad &amp; typing</button>
+  </div>
+
+  <div class="pane on" id="pane-remote">
+  <div class="card">
+    <div class="pad">
+      <div class="ring"></div>
+      <button class="arrow up"    data-key="UP"    aria-label="Up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+      <button class="arrow down"  data-key="DOWN"  aria-label="Down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <button class="arrow left"  data-key="LEFT"  aria-label="Left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="arrow right" data-key="RIGHT" aria-label="Right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+      <button class="ok" data-key="OK">OK</button>
+    </div>
+
+    <div class="row r3">
+      <button class="b" data-key="BACK">Back</button>
+      <button class="b" data-key="HOME">Home</button>
+      <button class="b" data-key="MENU">Menu</button>
+    </div>
+
+    <div class="row r4">
+      <button class="b" data-key="VOLDOWN">Vol −</button>
+      <button class="b" data-key="MUTE">Mute</button>
+      <button class="b" data-key="VOLUP">Vol +</button>
+      <button class="b" data-key="PLAY">Play</button>
+    </div>
+
+    <div class="row r4">
+      <button class="b" data-key="REW">◀◀</button>
+      <button class="b" data-key="FF">▶▶</button>
+      <button class="b" data-key="INPUT">Input</button>
+      <button class="b" data-key="SETTINGS">Setup</button>
+    </div>
+
+    <div class="kb">
+      <input id="txt" placeholder="Type on the TV, then Enter" autocomplete="off" spellcheck="false">
+      <button class="b" id="send" style="flex:0 0 58px">Send</button>
+    </div>
+
+    <div class="row r3">
+      <button class="b" id="mirror">Mirror</button>
+      <button class="b" data-key="SEARCH">Search</button>
+      <button class="b warm" data-key="POWER">Power</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="section">Apps on the TV</p>
+    <div class="apps" id="apps"><div class="empty">loading…</div></div>
+  </div>
+  </div><!-- /pane-remote -->
+
+  <div class="pane" id="pane-pad">
+    <div class="card">
+      <p class="section">Touchpad — the pad is the TV screen</p>
+      <div class="padwrap" id="padwrap">
+        <img id="shot" alt="">
+        <div class="noimg" id="noimg">waiting for the first frame…</div>
+        <div class="ping" id="ping"></div>
+        <div class="blocked" id="blocked">
+          <div><b id="blockedapp">This app</b> blocks screen capture, so there is nothing to show.<br>
+          Your clicks still reach the TV — you just cannot see them here.<br>
+          Use the <b>Remote</b> tab's D-pad instead.</div>
+        </div>
+        <div class="live" id="livetag">live</div>
+      </div>
+      <div class="row r5" style="margin-top:10px">
+        <button class="b" data-key="BACK">Back</button>
+        <button class="b" data-key="HOME">Home</button>
+        <button class="b" data-key="VOLDOWN">Vol −</button>
+        <button class="b" data-key="MUTE">Mute</button>
+        <button class="b" data-key="VOLUP">Vol +</button>
+      </div>
+      <div class="padbar">
+        <button class="b" id="refresh">Refresh now</button>
+        <button class="b" id="livebtn">Go live</button>
+        <button class="b" id="padmirror">Open mirror</button>
+      </div>
+      <p class="note">
+        Click to tap that exact spot. Drag to swipe. Scroll to scroll.<br>
+        This TV needs ~1.2&nbsp;s to encode each frame, so the picture is about 1 fps —
+        a preview, not video. Capturing runs continuously in the background, so your
+        clicks never wait for it. For real-time video use <b>Open mirror</b>.<br>
+        Netflix, Prime Video and HDMI inputs refuse to be captured at all.
+      </p>
+    </div>
+
+    <div class="card kbbig">
+      <p class="section">Type on the TV</p>
+      <textarea id="txt2" placeholder="Type here, then press Send. Goes to whatever text field is focused on the TV." spellcheck="false"></textarea>
+      <div class="row r3" style="margin-top:9px">
+        <button class="b" id="send2">Send</button>
+        <button class="b" id="sendgo">Send + OK</button>
+        <button class="b" data-key="DEL">Backspace</button>
+      </div>
+      <p class="note">
+        Only lands in a <b>focused</b> text field — app search boxes, passwords, login forms.
+        Google TV's own home search is voice-driven and ignores typed text.
+      </p>
+    </div>
+  </div><!-- /pane-pad -->
+
+  <p class="hint">
+    <kbd>↑↓←→</kbd> move · <kbd>⏎</kbd> OK · <kbd>⌫</kbd> back · <kbd>H</kbd> home<br>
+    <kbd>+</kbd> <kbd>−</kbd> volume · <kbd>M</kbd> mute · <kbd>space</kbd> play/pause
+  </p>
+</div>
+
+<script>
+const post = (p, b) => fetch(p, {method:'POST', headers:{'Content-Type':'application/json'},
+                               body: JSON.stringify(b||{})});
+const flash = el => { if(!el) return; el.classList.add('hit');
+                      setTimeout(()=>el.classList.remove('hit'), 110); };
+
+function key(k, el){ flash(el || document.querySelector(`[data-key="${k}"]`)); post('/key', {key:k}); }
+
+document.querySelectorAll('[data-key]').forEach(b =>
+  b.addEventListener('click', () => key(b.dataset.key, b)));
+
+/* keyboard -> TV */
+const MAP = {ArrowUp:'UP', ArrowDown:'DOWN', ArrowLeft:'LEFT', ArrowRight:'RIGHT',
+             Enter:'OK', Backspace:'BACK', Escape:'BACK', ' ':'PLAY',
+             h:'HOME', H:'HOME', m:'MUTE', M:'MUTE',
+             '+':'VOLUP', '=':'VOLUP', '-':'VOLDOWN', '_':'VOLDOWN'};
+const txt = document.getElementById('txt');
+addEventListener('keydown', e => {
+  const ae = document.activeElement;
+  if (ae === txt || (ae && ae.id === 'txt2')) return;
+  const k = MAP[e.key];
+  if (k) { e.preventDefault(); key(k); }
+});
+
+/* type into the TV */
+function send(){
+  const v = txt.value.trim();
+  if (!v) return;
+  post('/text', {text:v}).then(()=>{ txt.value=''; });
+}
+document.getElementById('send').onclick = send;
+txt.addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); send(); }
+  if (e.key === 'Escape') { txt.blur(); }
+});
+
+document.getElementById('mirror').onclick = e => { flash(e.currentTarget); post('/mirror'); };
+
+/* apps */
+fetch('/apps').then(r=>r.json()).then(list => {
+  const box = document.getElementById('apps');
+  box.innerHTML = '';
+  if (!list.length) { box.innerHTML = '<div class="empty">No apps read yet — is the TV connected?</div>'; return; }
+  list.forEach(a => {
+    const b = document.createElement('button');
+    b.className = 'b'; b.textContent = a.name; b.title = a.pkg;
+    b.onclick = () => { flash(b); post('/open', {app:a.pkg}); };
+    box.appendChild(b);
+  });
+});
+
+/* ---------------- tabs ---------------- */
+const panes = {remote: document.getElementById('pane-remote'),
+               pad:    document.getElementById('pane-pad')};
+const tabs  = {remote: document.getElementById('tab-remote'),
+               pad:    document.getElementById('tab-pad')};
+let tab = 'remote';
+function showTab(t){
+  tab = t;
+  for (const k in panes){ panes[k].classList.toggle('on', k===t); tabs[k].classList.toggle('on', k===t); }
+  if (t === 'pad') startLive(); else clearInterval(liveTimer);
+}
+tabs.remote.onclick = () => showTab('remote');
+tabs.pad.onclick    = () => showTab('pad');
+
+/* ---------------- touchpad ---------------- */
+const wrap = document.getElementById('padwrap');
+const shot = document.getElementById('shot');
+const noimg = document.getElementById('noimg');
+const pingEl = document.getElementById('ping');
+const liveTag = document.getElementById('livetag');
+let live = true, shotBusy = false, liveTimer = null, lastN = -1;
+
+function setShot(){
+  if (shotBusy) return;
+  shotBusy = true;
+  const img = new Image();
+  img.onload = () => { shot.src = img.src; noimg.style.display='none'; shotBusy=false; };
+  img.onerror = () => { shotBusy = false; };
+  img.src = '/screen.png?t=' + Date.now();
+}
+
+/* Poll the cheap /frame endpoint; only pull the PNG when the grabber has a new one.
+   The TV needs ~1.2s to encode a frame, so this is about as fast as screencap goes. */
+function pollFrame(){
+  fetch('/frame').then(r => r.json()).then(f => {
+    const b = document.getElementById('blocked');
+    b.classList.toggle('on', !!f.blocked);
+    if (f.blocked) document.getElementById('blockedapp').textContent = f.app || 'This app';
+    liveTag.textContent = f.blocked ? 'blocked' : (live ? 'live' : 'paused');
+    if (!f.blocked && f.n !== lastN){ lastN = f.n; setShot(); }
+  }).catch(()=>{});
+}
+
+function refreshShot(){ lastN = -1; pollFrame(); }
+
+function startLive(){
+  live = true;
+  document.getElementById('livebtn').textContent = 'Pause';
+  liveTag.textContent = 'live';
+  clearInterval(liveTimer);
+  pollFrame();
+  liveTimer = setInterval(() => { if (tab === 'pad') pollFrame(); }, 400);
+}
+function stopLive(){
+  live = false;
+  document.getElementById('livebtn').textContent = 'Go live';
+  liveTag.textContent = 'paused';
+  clearInterval(liveTimer);
+}
+
+document.getElementById('refresh').onclick = e => { flash(e.currentTarget); refreshShot(); };
+document.getElementById('padmirror').onclick = e => { flash(e.currentTarget); post('/mirror'); };
+document.getElementById('livebtn').onclick = e => { flash(e.currentTarget); live ? stopLive() : startLive(); };
+
+/* Where the picture really sits inside the box (object-fit: contain letterboxes it). */
+function imageBox(){
+  const r = wrap.getBoundingClientRect();
+  const nw = shot.naturalWidth || 16, nh = shot.naturalHeight || 9;
+  const scale = Math.min(r.width / nw, r.height / nh);
+  const w = nw * scale, h = nh * scale;
+  return {left: r.left + (r.width - w)/2, top: r.top + (r.height - h)/2, w, h, r};
+}
+function toNorm(ev){
+  const b = imageBox();
+  return {x: Math.min(1, Math.max(0, (ev.clientX - b.left) / b.w)),
+          y: Math.min(1, Math.max(0, (ev.clientY - b.top)  / b.h))};
+}
+function showPing(ev){
+  const r = wrap.getBoundingClientRect();
+  pingEl.style.left = (ev.clientX - r.left) + 'px';
+  pingEl.style.top  = (ev.clientY - r.top)  + 'px';
+  pingEl.classList.remove('go'); void pingEl.offsetWidth; pingEl.classList.add('go');
+}
+
+let down = null;
+wrap.addEventListener('pointerdown', ev => {
+  ev.preventDefault(); wrap.setPointerCapture(ev.pointerId);
+  down = {...toNorm(ev), t: Date.now(), ev};
+});
+wrap.addEventListener('pointerup', ev => {
+  if (!down) return;
+  const up = toNorm(ev);
+  const dist = Math.hypot(up.x - down.x, up.y - down.y);
+  const ms = Math.max(60, Math.min(800, Date.now() - down.t));
+  showPing(ev);
+  if (dist < 0.02) post('/tap',   {x: up.x, y: up.y});
+  else             post('/swipe', {x1: down.x, y1: down.y, x2: up.x, y2: up.y, ms});
+  down = null;
+  if (!live) setTimeout(refreshShot, 900);
+});
+wrap.addEventListener('pointercancel', () => { down = null; });
+
+/* wheel = vertical swipe in the middle of the screen */
+let wheelAcc = 0, wheelTimer = null;
+wrap.addEventListener('wheel', ev => {
+  ev.preventDefault();
+  wheelAcc += ev.deltaY;
+  clearTimeout(wheelTimer);
+  wheelTimer = setTimeout(() => {
+    const d = Math.max(-0.4, Math.min(0.4, wheelAcc / 1200));
+    wheelAcc = 0;
+    if (Math.abs(d) < 0.02) return;
+    post('/swipe', {x1: 0.5, y1: 0.5 + d, x2: 0.5, y2: 0.5 - d, ms: 160});
+    if (!live) setTimeout(refreshShot, 900);
+  }, 90);
+}, {passive: false});
+
+/* ---------------- big type box ---------------- */
+const txt2 = document.getElementById('txt2');
+function send2(then){
+  const v = txt2.value.trim();
+  if (!v) return;
+  post('/text', {text: v}).then(() => {
+    txt2.value = '';
+    if (then) setTimeout(() => key('OK'), 350);
+    if (tab === 'pad') setTimeout(refreshShot, 900);
+  });
+}
+document.getElementById('send2').onclick  = e => { flash(e.currentTarget); send2(false); };
+document.getElementById('sendgo').onclick = e => { flash(e.currentTarget); send2(true); };
+txt2.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send2(false); }
+});
+
+/* heartbeat */
+function tick(){
+  fetch('/status').then(r=>r.json()).then(s => {
+    document.getElementById('dot').classList.toggle('live', s.ok);
+    document.getElementById('app').textContent = s.ok ? s.app : 'not reachable';
+  }).catch(()=>{
+    document.getElementById('dot').classList.remove('live');
+    document.getElementById('app').textContent = 'remote stopped';
+  });
+}
+tick(); setInterval(tick, 4000);
+</script>
+</body>
+</html>
